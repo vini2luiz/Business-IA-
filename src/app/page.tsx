@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             
             {/* Headline otimizada com hierarquia visual clara */}
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-4 leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 leading-tight">
               Transforme seu{' '}
               <span className="bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#6d28d9] bg-clip-text text-transparent">
                 Negócio com IA
@@ -113,10 +113,10 @@ export default function Home() {
               Desenvolvemos agentes de IA, plataformas SaaS e soluções digitais que impulsionam o crescimento da sua empresa
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto">
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="group bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#6d28d9] hover:from-[#6d28d9] hover:via-[#7c3aed] hover:to-[#8b5cf6] text-white px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#7c3aed]/25 flex items-center"
+                className="w-full sm:w-auto group bg-gradient-to-r from-[#7c3aed] via-[#8b5cf6] to-[#6d28d9] hover:from-[#6d28d9] hover:via-[#7c3aed] hover:to-[#8b5cf6] text-white px-8 py-4 rounded-2xl font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#7c3aed]/25 flex items-center justify-center"
               >
                 Começar Agora
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -124,7 +124,7 @@ export default function Home() {
               
               <button 
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                className="border-2 border-[#7c3aed]/50 hover:border-[#7c3aed] text-gray-300 hover:text-[#7c3aed] px-8 py-4 rounded-2xl font-semibold text-lg transition-all duration-300 hover:scale-105 hover:bg-[#7c3aed]/5 backdrop-blur-sm"
+                className="w-full sm:w-auto border-2 border-[#7c3aed]/50 hover:border-[#7c3aed] text-gray-300 hover:text-[#7c3aed] px-8 py-4 rounded-2xl font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:bg-[#7c3aed]/5 backdrop-blur-sm"
               >
                 Ver Serviços
               </button>
@@ -151,7 +151,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
             {services.map((service, index) => (
               <div 
                 key={index}
