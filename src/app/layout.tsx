@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   keywords: ["IA", "Inteligência Artificial", "Agentes de IA", "Desenvolvimento Web", "SaaS", "Tecnologia"],
   authors: [{ name: "Business IA" }],
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#5423e7",
+  themeColor: "#6366f1",
   openGraph: {
     title: "Soluções de IA e Tecnologia | Business IA",
     description: "Transforme seu negócio com inteligência artificial e tecnologia de ponta",

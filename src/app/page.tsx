@@ -88,14 +88,14 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-black">
+    <div className="min-h-screen bg-gradient-to-br from-[#0a0a0f] via-[#0f0f18] to-black">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-white/10 via-slate-800 to-slate-900">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#5423e7]/10 via-[#5423e7]/5 to-transparent"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-white/5 via-[#5423e7]/5 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#6366f1]/10 via-[#6366f1]/5 to-transparent"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-white/5 via-[#6366f1]/5 to-transparent"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#5423e7]/20 to-[#5423e7]/20 border border-[#5423e7]/30 text-[#5423e7] text-sm font-medium mb-8 backdrop-blur-sm">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-[#6366f1]/20 to-[#6366f1]/20 border border-[#6366f1]/30 text-[#6366f1] text-sm font-medium mb-8 backdrop-blur-sm">
               <Star className="w-4 h-4 mr-2" />
               Soluções de IA e Tecnologia
             </div>
@@ -103,7 +103,7 @@ export default function Home() {
             {/* Headline otimizada com hierarquia visual clara */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white mb-6 leading-tight">
               Transforme seu{' '}
-              <span className="bg-gradient-to-r from-[#5423e7] via-[#7047eb] to-[#5423e7] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#6366f1] via-[#7c3aed] to-[#6366f1] bg-clip-text text-transparent">
                 Negócio com IA
               </span>
             </h1>
@@ -116,7 +116,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full sm:w-auto">
               <button 
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full sm:w-auto group bg-gradient-to-r from-[#5423e7] via-[#7047eb] to-[#5423e7] hover:from-[#5423e7] hover:via-[#5423e7] hover:to-[#7047eb] text-white px-8 py-4 rounded-2xl font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#5423e7]/25 flex items-center justify-center"
+                className="w-full sm:w-auto group bg-gradient-to-r from-[#6366f1] via-[#7c3aed] to-[#6366f1] hover:from-[#6366f1] hover:via-[#6366f1] hover:to-[#7c3aed] text-white px-8 py-4 rounded-2xl font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#6366f1]/25 flex items-center justify-center"
               >
                 Começar Agora
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
@@ -124,7 +124,7 @@ export default function Home() {
               
               <button 
                 onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full sm:w-auto border-2 border-[#5423e7]/50 hover:border-[#5423e7] text-gray-300 hover:text-[#5423e7] px-8 py-4 rounded-2xl font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:bg-[#5423e7]/5 backdrop-blur-sm"
+                className="w-full sm:w-auto border-2 border-[#6366f1]/50 hover:border-[#6366f1] text-gray-300 hover:text-[#6366f1] px-8 py-4 rounded-2xl font-semibold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:bg-[#6366f1]/5 backdrop-blur-sm"
               >
                 Ver Serviços
               </button>
@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="relative py-20 sm:py-32 bg-slate-900">
+      <section id="services" className="relative py-20 sm:py-32 bg-[#0a0a0f]">
         {/* Smooth transition from previous section */}
         <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-slate-900 via-slate-900/30 to-transparent"></div>
         
@@ -155,17 +155,17 @@ export default function Home() {
             {services.map((service, index) => (
               <div 
                 key={index}
-                className="group relative overflow-hidden bg-gradient-to-br from-slate-800/90 via-gray-800/90 to-slate-900/90 backdrop-blur-sm p-8 rounded-3xl border border-[#5423e7]/20 hover:border-[#5423e7]/50 hover:shadow-2xl hover:shadow-[#5423e7]/10 transition-all duration-500 hover:scale-105"
+                className="group relative overflow-hidden bg-gradient-to-br from-slate-800/90 via-gray-800/90 to-slate-900/90 backdrop-blur-sm p-8 rounded-3xl border border-[#6366f1]/20 hover:border-[#6366f1]/50 hover:shadow-2xl hover:shadow-[#6366f1]/10 transition-all duration-500 hover:scale-105"
               >
                 {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#5423e7]/5 via-transparent to-[#5423e7]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#6366f1]/5 via-transparent to-[#6366f1]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl"></div>
                 
                 <div className="relative z-10">
                   <div className="flex items-center mb-6">
-                    <div className="bg-gradient-to-br from-[#5423e7] via-[#7047eb] to-[#5423e7] p-4 rounded-2xl shadow-lg shadow-[#5423e7]/25">
+                    <div className="bg-gradient-to-br from-[#6366f1] via-[#7c3aed] to-[#6366f1] p-4 rounded-2xl shadow-lg shadow-[#6366f1]/25">
                       <service.icon className="w-8 h-8 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-white ml-4 group-hover:text-[#5423e7] transition-colors duration-300">
+                    <h3 className="text-2xl font-bold text-white ml-4 group-hover:text-[#6366f1] transition-colors duration-300">
                       {service.title}
                     </h3>
                   </div>
@@ -177,7 +177,7 @@ export default function Home() {
                   <ul className="space-y-3">
                     {service.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center text-gray-300 group-hover:text-gray-200 transition-colors duration-300">
-                        <div className="bg-gradient-to-r from-[#5423e7] to-[#5423e7] p-1 rounded-full mr-3 flex-shrink-0">
+                        <div className="bg-gradient-to-r from-[#6366f1] to-[#6366f1] p-1 rounded-full mr-3 flex-shrink-0">
                           <Check className="w-3 h-3 text-white" />
                         </div>
                         {feature}
@@ -187,7 +187,7 @@ export default function Home() {
                 </div>
 
                 {/* Animated border effect */}
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#5423e7] via-[#7047eb] to-[#5423e7] opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl"></div>
+                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#6366f1] via-[#7c3aed] to-[#6366f1] opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl"></div>
               </div>
             ))}
           </div>
@@ -198,7 +198,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="relative py-20 sm:py-32 bg-black">
+      <section id="contact" className="relative py-20 sm:py-32 bg-[#0a0a0f]">
         {/* Smooth transition from previous section */}
         <div className="absolute top-0 left-0 right-0 h-24 bg-gradient-to-b from-black via-black/30 to-transparent"></div>
         
@@ -212,11 +212,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-slate-900/90 via-gray-900/90 to-black/90 backdrop-blur-sm rounded-3xl shadow-2xl shadow-[#5423e7]/10 p-6 sm:p-8 border border-[#5423e7]/20">
+          <div className="bg-gradient-to-br from-slate-900/90 via-gray-900/90 to-black/90 backdrop-blur-sm rounded-3xl shadow-2xl shadow-[#6366f1]/10 p-6 sm:p-8 border border-[#6366f1]/20">
             {isSubmitted ? (
               <div className="text-center py-12">
-                <div className="bg-gradient-to-r from-[#5423e7]/20 to-[#5423e7]/20 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border border-[#5423e7]/30">
-                  <Check className="w-10 h-10 text-[#5423e7]" />
+                <div className="bg-gradient-to-r from-[#6366f1]/20 to-[#6366f1]/20 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 border border-[#6366f1]/30">
+                  <Check className="w-10 h-10 text-[#6366f1]" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Mensagem Enviada!</h3>
                 <p className="text-gray-300">Entraremos em contato em breve.</p>
@@ -237,7 +237,7 @@ export default function Home() {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-10 pr-3 py-3 bg-slate-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-[#5423e7] focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 backdrop-blur-sm text-sm"
+                        className="w-full pl-10 pr-3 py-3 bg-[#1a1a24]/50 border border-[#2a2a3a] rounded-xl focus:ring-2 focus:ring-[#6366f1] focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 backdrop-blur-sm text-sm"
                         placeholder="Seu nome"
                       />
                     </div>
@@ -256,7 +256,7 @@ export default function Home() {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-10 pr-3 py-3 bg-slate-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-[#5423e7] focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 backdrop-blur-sm text-sm"
+                        className="w-full pl-10 pr-3 py-3 bg-[#1a1a24]/50 border border-[#2a2a3a] rounded-xl focus:ring-2 focus:ring-[#6366f1] focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 backdrop-blur-sm text-sm"
                         placeholder="seu@email.com"
                       />
                     </div>
@@ -276,7 +276,7 @@ export default function Home() {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full pl-10 pr-3 py-3 bg-slate-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-[#5423e7] focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 backdrop-blur-sm text-sm"
+                        className="w-full pl-10 pr-3 py-3 bg-[#1a1a24]/50 border border-[#2a2a3a] rounded-xl focus:ring-2 focus:ring-[#6366f1] focus:border-transparent transition-all duration-300 text-white placeholder-gray-400 backdrop-blur-sm text-sm"
                         placeholder="(11) 99999-9999"
                       />
                     </div>
@@ -292,7 +292,7 @@ export default function Home() {
                       value={formData.service}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-3 py-3 bg-slate-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-[#5423e7] focus:border-transparent transition-all duration-300 text-white backdrop-blur-sm text-sm hover:bg-slate-800/70 focus:bg-slate-800/70"
+                      className="w-full px-3 py-3 bg-[#1a1a24]/50 border border-[#2a2a3a] rounded-xl focus:ring-2 focus:ring-[#6366f1] focus:border-transparent transition-all duration-300 text-white backdrop-blur-sm text-sm hover:bg-[#1a1a24]/70 focus:bg-[#1a1a24]/70"
                     >
                       <option value="">Selecione um serviço</option>
                       <option value="agentes-ia">Agentes de IA</option>
@@ -316,7 +316,7 @@ export default function Home() {
                       onChange={handleInputChange}
                       rows={4}
                       required
-                      className="w-full pl-10 pr-3 py-3 bg-slate-800/50 border border-gray-700 rounded-xl focus:ring-2 focus:ring-[#5423e7] focus:border-transparent transition-all duration-300 resize-none text-white placeholder-gray-400 backdrop-blur-sm text-sm"
+                      className="w-full pl-10 pr-3 py-3 bg-[#1a1a24]/50 border border-[#2a2a3a] rounded-xl focus:ring-2 focus:ring-[#6366f1] focus:border-transparent transition-all duration-300 resize-none text-white placeholder-gray-400 backdrop-blur-sm text-sm"
                       placeholder="Conte-nos sobre seu projeto, objetivos e como podemos ajudar..."
                     />
                   </div>
@@ -325,7 +325,7 @@ export default function Home() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-[#5423e7] via-[#7047eb] to-[#5423e7] hover:from-[#5423e7] hover:via-[#5423e7] hover:to-[#7047eb] text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#5423e7]/25 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
+                  className="w-full bg-gradient-to-r from-[#6366f1] via-[#7c3aed] to-[#6366f1] hover:from-[#6366f1] hover:via-[#6366f1] hover:to-[#7c3aed] text-white py-3 px-6 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-[#6366f1]/25 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                 >
                   {isSubmitting ? (
                     <div className="flex items-center justify-center">
@@ -349,17 +349,17 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-[#5423e7]/20">
+      <footer className="bg-[#0a0a0f] border-t border-[#6366f1]/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="text-center">
             <p className="text-gray-400 mb-6">
               Transformando negócios com inteligência artificial e tecnologia de ponta
             </p>
             <div className="flex justify-center space-x-6">
-              <Mail className="w-6 h-6 text-[#5423e7] hover:text-[#7047eb] cursor-pointer transition-colors duration-300" />
-              <Phone className="w-6 h-6 text-[#5423e7] hover:text-[#7047eb] cursor-pointer transition-colors duration-300" />
+              <Mail className="w-6 h-6 text-[#6366f1] hover:text-[#7c3aed] cursor-pointer transition-colors duration-300" />
+              <Phone className="w-6 h-6 text-[#6366f1] hover:text-[#7c3aed] cursor-pointer transition-colors duration-300" />
             </div>
-            <div className="mt-8 pt-8 border-t border-gray-800">
+            <div className="mt-8 pt-8 border-t border-[#2a2a3a]">
               <p className="text-gray-500 text-sm">
                 © 2025 Todos os direitos reservados.
               </p>
@@ -370,4 +370,5 @@ export default function Home() {
     </div>
   )
 }
+
 
