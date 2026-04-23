@@ -8,22 +8,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Soluções de IA e Tecnologia | Transforme seu Negócio",
-  description: "Desenvolvemos agentes de IA, sites profissionais e sistemas internos. Soluções tecnológicas que impulsionam o crescimento da sua empresa.",
-  keywords: ["IA", "Inteligência Artificial", "Agentes de IA", "Desenvolvimento Web", "SaaS", "Tecnologia"],
-  authors: [{ name: "Business IA" }],
+  title: "Sites, Landing Pages e SaaS | ZeroToApp",
+  description: "Desenvolvemos landing pages, sites profissionais e plataformas SaaS. Soluções que convertem visitantes em clientes e escalam seu negócio.",
+  keywords: ["Landing Page", "Sites", "SaaS", "Desenvolvimento Web", "Tecnologia", "ZeroToApp"],
+  authors: [{ name: "ZeroToApp" }],
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
-  themeColor: "#6366f1",
+  themeColor: "#22d3ee",
   openGraph: {
-    title: "Soluções de IA e Tecnologia | Business IA",
-    description: "Transforme seu negócio com inteligência artificial e tecnologia de ponta",
+    title: "Sites, Landing Pages e SaaS | ZeroToApp",
+    description: "Do zero ao ar em 7 dias. Landing pages, sites e sistemas que vendem.",
     type: "website",
-    siteName: "Business IA",
+    siteName: "ZeroToApp",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Soluções de IA e Tecnologia | Business IA",
-    description: "Transforme seu negócio com inteligência artificial e tecnologia de ponta",
+    title: "Sites, Landing Pages e SaaS | ZeroToApp",
+    description: "Do zero ao ar em 7 dias. Landing pages, sites e sistemas que vendem.",
   },
 };
 

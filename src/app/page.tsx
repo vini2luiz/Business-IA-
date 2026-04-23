@@ -77,9 +77,9 @@ export default function Home() {
   const filteredProjects = activeFilter === 'Todos' ? projects : projects.filter(p => p.category === activeFilter)
 
   const testimonials = [
-    { name: 'Carlos Mendes', role: 'CEO, Startup Tech', text: 'A Business IA transformou completamente nosso atendimento. Reduzimos 70% do tempo de suporte com o chatbot deles.', rating: 5 },
+    { name: 'Carlos Mendes', role: 'CEO, Startup Tech', text: 'A ZeroToApp transformou completamente nosso atendimento. Reduzimos 70% do tempo de suporte com o chatbot deles.', rating: 5 },
     { name: 'Ana Lima', role: 'Diretora Comercial', text: 'O sistema de automação que desenvolveram nos economiza horas de trabalho manual todo dia. Simplesmente impressionante!', rating: 5 },
-    { name: 'Pedro Souza', role: 'Fundador, E-commerce', text: 'Site entregue em tempo recorde, com design incrível e performance excepcional. Super recomendo a Business IA!', rating: 5 },
+    { name: 'Pedro Souza', role: 'Fundador, E-commerce', text: 'Site entregue em tempo recorde, com design incrível e performance excepcional. Super recomendo a ZeroToApp!', rating: 5 },
     { name: 'Mariana Costa', role: 'Head de Marketing', text: 'As integrações que fizeram com nosso CRM funcionam perfeitamente. Equipe extremamente profissional e ágil.', rating: 5 },
   ]
 
@@ -129,9 +129,7 @@ export default function Home() {
               <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center shadow-lg shadow-cyan-500/20">
                 <Cpu className="w-4 h-4 text-white" />
               </div>
-              Business IA
-            </a>
-            <div className="hidden md:flex items-center gap-8">
+              ZeroToApp
               {navLinks.map(link => (
                 <a
                   key={link.href}
@@ -255,7 +253,7 @@ export default function Home() {
                   <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/60" />
                   <div className="w-2.5 h-2.5 rounded-full bg-emerald-500/60" />
                   <div className="flex-1 mx-3 px-3 py-1 bg-white/4 rounded-md text-[10px] text-gray-500 text-center tracking-wide">
-                    businessia.com.br
+                    zerotoapp.online
                   </div>
                 </div>
                 {/* Code preview */}
@@ -691,7 +689,7 @@ export default function Home() {
             <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-cyan-500 to-emerald-500 flex items-center justify-center">
               <Cpu className="w-3.5 h-3.5 text-white" />
             </div>
-            <span className="font-bold text-white">Business IA</span>
+            <span className="font-bold text-white">ZeroToApp</span>
           </div>
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             {navLinks.map(link => (
@@ -700,7 +698,7 @@ export default function Home() {
               </a>
             ))}
           </div>
-          <p className="text-gray-700 text-sm">© 2025 Business IA. Todos os direitos reservados.</p>
+          <p className="text-gray-700 text-sm">© 2026 ZeroToApp. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
