@@ -1,7 +1,13 @@
 "use client"
 
 import { useState, useEffect } from 'react'
+import emailjs from '@emailjs/browser'
 import { ArrowRight, Check, Star, Code, Cpu, Menu, X, MessageCircle, ChevronRight, Sparkles, Workflow, Globe, Layers } from 'lucide-react'
+
+// ── EmailJS ─ preencha com seus dados do emailjs.com ──
+const EMAILJS_SERVICE_ID  = 'service_f6w43fq'
+const EMAILJS_TEMPLATE_ID = 'template_hqbphnj'
+const EMAILJS_PUBLIC_KEY  = '-vIbGd_1y4-c5rkDP'
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -28,24 +34,26 @@ export default function Home() {
     e.preventDefault()
     setIsSubmitting(true)
     try {
-      const zapierWebhookUrl = process.env.NEXT_PUBLIC_ZAPIER_WEBHOOK_URL || 'YOUR_ZAPIER_WEBHOOK_URL'
-      await fetch(zapierWebhookUrl, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          timestamp: new Date().toISOString(),
-          source: 'website-contact-form'
-        })
-      })
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name:    formData.name,
+          from_email:   formData.email,
+          phone:        formData.phone,
+          service:      formData.service,
+          message:      formData.message,
+          to_email:     'vini2luiz@gmail.com',
+        },
+        EMAILJS_PUBLIC_KEY
+      )
       setIsSubmitted(true)
       setTimeout(() => {
         setIsSubmitted(false)
         setFormData({ name: '', email: '', phone: '', service: '', message: '' })
       }, 3000)
     } catch {
-      alert('Erro ao enviar formulário. Verifique sua conexão.')
+      alert('Erro ao enviar. Tente novamente ou fale pelo WhatsApp.')
     } finally {
       setIsSubmitting(false)
     }
@@ -575,7 +583,7 @@ export default function Home() {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/4 border border-white/8 rounded-xl text-white placeholder-gray-700 focus:border-cyan-500/50 focus:outline-none focus:bg-white/6 transition-all text-sm"
+                      className="w-full px-4 py-3 bg-[#0c1c28] border border-white/8 rounded-xl text-white placeholder-gray-600 focus:border-cyan-500/50 focus:outline-none focus:bg-[#0e2030] transition-all text-sm"
                       placeholder="Seu nome"
                     />
                   </div>
@@ -587,7 +595,7 @@ export default function Home() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/4 border border-white/8 rounded-xl text-white placeholder-gray-700 focus:border-cyan-500/50 focus:outline-none focus:bg-white/6 transition-all text-sm"
+                      className="w-full px-4 py-3 bg-[#0c1c28] border border-white/8 rounded-xl text-white placeholder-gray-600 focus:border-cyan-500/50 focus:outline-none focus:bg-[#0e2030] transition-all text-sm"
                       placeholder="seu@email.com"
                     />
                   </div>
@@ -600,8 +608,8 @@ export default function Home() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-white/4 border border-white/8 rounded-xl text-white placeholder-gray-700 focus:border-cyan-500/50 focus:outline-none focus:bg-white/6 transition-all text-sm"
-                      placeholder="(11) 99999-9999"
+                      className="w-full px-4 py-3 bg-[#0c1c28] border border-white/8 rounded-xl text-white placeholder-gray-600 focus:border-cyan-500/50 focus:outline-none focus:bg-[#0e2030] transition-all text-sm"
+                      placeholder="(44) 99999-9999"
                     />
                   </div>
                   <div>
@@ -611,7 +619,8 @@ export default function Home() {
                       value={formData.service}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/4 border border-white/8 rounded-xl text-white focus:border-cyan-500/50 focus:outline-none transition-all text-sm"
+                      className="w-full px-4 py-3 bg-[#0c1c28] border border-white/8 rounded-xl text-white focus:border-cyan-500/50 focus:outline-none focus:bg-[#0e2030] transition-all text-sm appearance-none"
+                      style={{ colorScheme: 'dark' }}
                     >
                       <option value="" className="bg-[#111]">Selecione...</option>
                       <option value="agentes-ia" className="bg-[#111]">Agentes de IA</option>
@@ -630,7 +639,7 @@ export default function Home() {
                     onChange={handleInputChange}
                     rows={4}
                     required
-                    className="w-full px-4 py-3 bg-white/4 border border-white/8 rounded-xl text-white placeholder-gray-700 focus:border-cyan-500/50 focus:outline-none focus:bg-white/6 transition-all resize-none text-sm"
+                    className="w-full px-4 py-3 bg-[#0c1c28] border border-white/8 rounded-xl text-white placeholder-gray-600 focus:border-cyan-500/50 focus:outline-none focus:bg-[#0e2030] transition-all resize-none text-sm"
                     placeholder="Descreva seu projeto..."
                   />
                 </div>
