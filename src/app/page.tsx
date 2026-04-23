@@ -130,6 +130,8 @@ export default function Home() {
                 <Cpu className="w-4 h-4 text-white" />
               </div>
               ZeroToApp
+            </a>
+            <div className="hidden md:flex items-center gap-8">
               {navLinks.map(link => (
                 <a
                   key={link.href}
